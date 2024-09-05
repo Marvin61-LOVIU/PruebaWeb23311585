@@ -1,0 +1,97 @@
+/* Archivo: styles.css */
+
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #1a1a1a; /* Negro */
+    color: #ffffff; /* Blanco */
+    overflow-x: hidden;
+}
+
+.header {
+    background-color: #4a004a; /* Morado oscuro */
+    padding: 40px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+}
+
+.titulo {
+    color: #00ff00; /* Verde neón */
+    margin: 0;
+    font-size: 3rem;
+    letter-spacing: 2px;
+    animation: neon-glow 1.5s infinite alternate;
+}
+
+@keyframes neon-glow {
+    from {
+        text-shadow: 0 0 5px #00ff00, 0 0 10px #00ff00, 0 0 15px #00ff00;
+    }
+    to {
+        text-shadow: 0 0 20px #00ff00, 0 0 30px #00ff00, 0 0 40px #00ff00;
+    }
+}
+
+.contenido {
+    padding: 40px 20px;
+    margin: 0 auto;
+    max-width: 800px;
+    transition: transform 0.3s ease;
+}
+
+.contenido:hover {
+    transform: scale(1.02);
+}
+
+.subtitulo {
+    color: #00ff00; /* Verde neón */
+    font-size: 2rem;
+    border-bottom: 2px solid #00ff00;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+.texto {
+    color: #b3b3b3; /* Gris claro */
+    line-height: 1.8;
+    font-size: 1.1rem;
+    transition: color 0.3s ease;
+}
+
+.texto:hover {
+    color: #ffffff; /* Blanco */
+}
+
+.lista {
+    list-style-type: none;
+    padding: 0;
+}
+
+.elemento {
+    background-color: #4a004a; /* Morado oscuro */
+    margin: 10px 0;
+    padding: 15px;
+    border-left: 5px solid #00ff00; /* Verde neón */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.elemento:hover {
+    transform: translateX(10px);
+    box-shadow: 0 0 15px #00ff00;
+}
+
+.footer {
+    background-color: #4a004a; /* Morado oscuro */
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.5);
+    margin-top: 40px;
+}
